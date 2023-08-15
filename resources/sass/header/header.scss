@@ -1,0 +1,156 @@
+.header {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    .video-header{
+        position: fixed;
+        right: 0;
+        top: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        opacity: 70%;
+        z-index: -9999;
+    }
+
+    .desktop_navbar {
+        background: url("img/brick_wall.png") center;
+        filter: blur(80%);
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        height: 150px;
+        align-items: center;
+        h1{
+            font-family: 'Futura Futuris Bold';
+            width: 100vw;
+            text-align: center;
+            font-weight: bold;
+            background: #FFFAE7;
+            -webkit-background-clip: text;
+            color: transparent; /* Скрытие обычного цвета текста */
+            font-size: 64px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            overflow-y: hidden;
+            padding: 10px 0;
+            animation: glowing 2s infinite;
+            position: relative;
+            &::before {
+                padding: 10px 0;
+                width: 100vw;
+                text-align: center;
+                content: "ФУДМОЛЛ"; /* Вставляем содержимое */
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: transparent;
+                text-shadow: 0 0 5px rgba(252, 250,225, 0.5), 0 0 8px rgba(255, 215, 0, 0.5), 0 0 12px rgba(252, 250,225, 0.5);
+                animation: glowing 2s infinite;
+                filter: blur(10px);
+
+            }
+        }
+        h1::before {
+
+        }
+        .header-links {
+            padding-bottom: 10px;
+            a {
+                text-decoration: none;
+                color: #FCF7B3;
+                font-size: 18px;
+                font-weight: bold;
+                &:hover{
+                    color: #FFC107;
+                }
+            }
+        }
+    }
+    ul, ol {
+        margin: 0;
+        list-style: none;
+        display: flex;
+        column-gap: 25px;
+    }
+    .header_content {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,50%);
+    }
+    .header_button {
+        padding: 15px 30px;
+        background: none;
+        font-size: 36px;
+        font-weight: 500;
+        color: #FCF7B3;
+        border-color: #FCF7B3;
+    }
+    h3 {
+        color: #fff;
+        overflow: hidden;
+        width: 100vw;
+        margin-top: 30px;
+        font-size: 36px;
+    }
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .desktop_navbar h1 {
+        font-size: 52px !important;
+    }
+    .desktop_navbar a {
+        font-size: 16px !important;
+    }
+    .header_button {
+        font-size: 18px !important;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .desktop_navbar h1 {
+        font-size: 42px !important;
+    }
+    .desktop_navbar a {
+        font-size: 14px !important;
+    }
+    .desktop_navbar .h3-marquee span {
+        font-size: 16px !important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .header h3 {
+        font-size: 18px;
+    }
+    .header h1 {
+        font-size: 50px;
+    }
+}
+
+//.h3-marquee {
+//    position: relative;
+//    white-space: nowrap;
+//    overflow: hidden;
+//}
+//
+//.h3-marquee span {
+//    display: inline-block;
+//    animation: marquee 10s linear infinite;
+//}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(170%);
+    }
+    100% {
+        transform: translateX(-170%);
+    }
+}
+
+

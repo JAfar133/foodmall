@@ -1,0 +1,86 @@
+.about {
+    background: #06101A;
+    width: 100vw;
+    padding-bottom: 140px;
+    .container {
+        padding-top: 150px;
+    }
+
+    .row {
+        margin-top: 90px;
+    }
+
+    .content-col {
+        div {
+            position: relative;
+            width: 80%;
+            height: 100%;
+            padding: 30px;
+        }
+
+        div::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, #181818, #eee, #181818);
+        }
+
+        /* Добавляем нижнюю рамку с использованием тех же стилей */
+        div::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, #181818, #eee, #181818);
+        }
+
+        p {
+            max-width: 500px;
+        }
+
+    }
+
+    .image-col {
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+
+    h2 {
+        color: #fff;
+        overflow: hidden;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    p {
+        color: #ADADAD;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .about .content-col div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .image-col {
+        order: -1; /* Меняем порядок вывода для маленьких экранов */
+    }
+    .content-col {
+        margin-top: 15px;
+    }
+}

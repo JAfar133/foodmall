@@ -1,0 +1,51 @@
+@import "menu/menu.scss";
+@import "video/video.scss";
+@import "header/header.scss";
+@import 'bootstrap/scss/bootstrap';
+@import 'variables.scss';
+@import 'about/about.scss';
+@import 'contacts/contacts.scss';
+@import 'footer/footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@font-face {
+    font-family: 'Futura Futuris Light';
+    src: url('fonts/FuturaFuturisLightC.eot');
+    src: url('fonts/FuturaFuturisLightC.eot?#iefix') format('embedded-opentype'),
+    url('fonts/FuturaFuturisLightC.woff') format('woff'),
+    url('fonts/FuturaFuturisLightC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura Futuris Bold';
+    src: url('fonts/FuturaFuturisC-Bold.eot');
+    src: url('fonts/FuturaFuturisC-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/FuturaFuturisC-Bold.woff') format('woff'),
+    url('fonts/FuturaFuturisC-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Futura Futuris Light';
+    background: #212529;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.gold {
+    color: #FFC107;
+    font-weight: bold;
+    font-size: 16px;
+}
+
