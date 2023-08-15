@@ -6,13 +6,19 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Меню</title>
-
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/panzoom/panzoom.umd.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/panzoom/panzoom.css"
+    />
     @vite(['resources/js/app.js'])
 </head>
 <body>
 <div class="menu_page" data-targetsize="0.45" data-duration="600">
     @foreach($menus as $menu)
-        <img class="js-amplify" src="{{ asset('storage/'.$menu->path) }}" alt="">
+        <div class="f-panzoom">
+            <img class="f-panzoom__content" src="{{ asset('storage/'.$menu->path) }}" alt="">
+        </div>
     @endforeach
 </div>
 
