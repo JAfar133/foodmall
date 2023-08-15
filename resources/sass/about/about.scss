@@ -2,8 +2,6 @@
     background: #06101A;
     width: 100vw;
     padding-bottom: 140px;
-    .about_bg{
-    }
     .container {
         padding-top: 150px;
     }
@@ -56,13 +54,12 @@
         }
     }
 
-
-
     h2 {
         color: #fff;
         overflow: hidden;
         margin-bottom: 20px;
         margin-top: 10px;
+        font-size: 52px;
     }
 
     p {
@@ -75,6 +72,9 @@
 @media only screen and (max-width: 991px) {
     .about .content-col div {
         width: 100%;
+    }
+    .about h2 {
+        font-size: 40px;
     }
 }
 

@@ -46,6 +46,11 @@
         height: 110vh;
     }
 }
+@media only screen and (max-width: 1300px) {
+    .video video {
+        width: 100% ;
+    }
+}
 @media only screen and (max-width: 1100px) {
 
     .video {
