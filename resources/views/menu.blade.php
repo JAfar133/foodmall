@@ -10,10 +10,12 @@
     @vite(['resources/js/app.js'])
 </head>
 <body>
-    <div class="menu_page">
-        @foreach($menus as $menu)
-            <img src="{{ asset('storage/'.$menu->path)  }}" alt="">
-        @endforeach
-    </div>
+<div class="menu_page" data-targetsize="0.45" data-duration="600">
+    @foreach($menus as $menu)
+        <img class="js-amplify" src="{{ asset('storage/'.$menu->path) }}" alt="">
+    @endforeach
+</div>
+
+
 </body>
 </html>
