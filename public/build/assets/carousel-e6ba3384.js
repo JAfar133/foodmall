@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("video-carousel"),t=e.querySelectorAll("video");e.addEventListener("slid.bs.carousel",function(){t.forEach(function(n){n.pause()});const o=e.querySelector(".carousel-item.active video");o&&o.play()})});

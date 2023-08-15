@@ -1,0 +1,22 @@
+{
+  "resources/js/app.css": {
+    "file": "assets/app-cc159c42.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-cc159c42.css"
+    ],
+    "dynamicImports": [
+      "resources/js/carousel.js"
+    ],
+    "file": "assets/app-1ddd53a5.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/js/carousel.js": {
+    "file": "assets/carousel-e6ba3384.js",
+    "isDynamicEntry": true,
+    "src": "resources/js/carousel.js"
+  }
+}
