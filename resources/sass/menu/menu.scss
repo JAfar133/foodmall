@@ -1,7 +1,25 @@
 .menu_page {
-    background: #1a202c;
+    background: #06101A;
     width: 100vw;
+
     img {
         width: 100%;
+    }
+}
+
+.menu__section {
+    background: #06101A;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img/menu_bg.jpg") no-repeat fixed center;
+    background-size: cover;
+    filter: blur(50%);
+}
+
+@media only screen and (min-width: 991px) {
+    .menu_page {
+        padding: 0 200px;
     }
 }

@@ -31,7 +31,7 @@
 .carousel {
     overflow: hidden;
     text-align: center;
-
+    padding-top: 100px;
     .carousel__title {
         margin: 0 auto;
 
@@ -41,24 +41,50 @@
         }
     }
 }
-@media only screen and (max-width: 1300px) {
-    .carousel-item video {
-        width: 100%;
-    }
+@media only screen and (max-width: 1500px) {
     .video {
-        height: 80vh;
+        height: 110vh;
+    }
+}
+@media only screen and (max-width: 1100px) {
+
+    .video {
+        height: 100vh;
     }
 }
 @media only screen and (max-width: 991px) {
     .video {
+        height: 88vh;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .video {
+        height: 76vh;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .video {
+        height: 70vh;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .video {
         height: 60vh;
     }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 450px) {
     .video {
-        height: 40vh;
+        height: 50vh;
     }
 }
+@media only screen and (max-width: 300px) {
+    .video {
+        height: 60vh;
+    }
+}
+
+
+
 //@media only screen and (max-width: 400px) {
 //    .video {
 //        height: 35vh;

@@ -14,7 +14,7 @@
         Your browser does not support the video tag.
     </video>
     <div class="text-center header_content">
-        <a href="/menu" class="text-center header_button btn btn-outline-warning">Посмотреть меню</a>
+{{--        <a href="/menu" class="text-center header_button btn btn-outline-warning">Посмотреть меню</a>--}}
         <h3 class="h3-marquee"><span>ВОСТОК · КАВКАЗ · ЕВРОПА · ПАНЗИЯ · ИТАЛИЯ · ЯПОНИЯ</span></h3>
     </div>
 </header>

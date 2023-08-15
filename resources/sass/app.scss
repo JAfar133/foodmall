@@ -34,7 +34,7 @@
 }
 body {
     font-family: 'Futura Futuris Light';
-    background: #212529;
+    background: #000;
 }
 ul {
     padding: 0;
@@ -47,5 +47,14 @@ a {
     color: #FFC107;
     font-weight: bold;
     font-size: 16px;
+}
+.header_button {
+    padding: 15px 30px;
+    background: none;
+    font-size: 36px;
+    font-weight: 500;
+    //font-family: 'Futura Futuris Bold' ;
+    color: #FCF7B3;
+    border-color: #FCF7B3;
 }
 
