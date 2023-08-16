@@ -8,12 +8,11 @@
 }
 
 .menu__section {
-    background: #06101A;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("img/menu_bg.jpg") no-repeat fixed center;
+    background: url("img/menu_bg.jpg") no-repeat center;
     background-size: cover;
 
     .header_button {
