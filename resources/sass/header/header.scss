@@ -5,13 +5,13 @@
     padding: 0;
     background-size: cover;
     .video-header{
+        height: 100%;
         position: absolute;
         right: 0;
         top: 0;
         min-width: 100%;
         min-height: 100%;
         width: auto;
-        height: auto;
         opacity: 70%;
         z-index: -9;
     }
