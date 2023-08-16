@@ -5,15 +5,17 @@
     padding: 0;
     background-size: cover;
     .video-header{
-        position: absolute;
-        height: 100%;
+        position: fixed;
         right: 0;
         top: 0;
         min-width: 100%;
         min-height: 100%;
+        -webkit-background-size: 2650px 1440px;
+        background-position-x: 50%;
         width: auto;
+        height: auto;
         opacity: 70%;
-        z-index: -9;
+        z-index: -999999;
     }
 
     .desktop_navbar {
