@@ -10,21 +10,30 @@
 .menu__section {
     height: 100vh;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    background: url("img/menu_bg.jpg") no-repeat fixed center center;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    z-index: -10;
-    .header_button {
-        opacity: 0;
-        transition: opacity 1s ease;
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
-    }
+    background: #1a202c;
+    z-index: -1;
 
-    /* Показываем кнопку при наведении на .menu__section */
+    .menu__background {
+        width: 100%;
+        position: absolute;
+        height: 100vh;
+        background: url("img/menu_bg.jpg") center center fixed no-repeat;
+        background-size: cover;
+        z-index: -10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .header_button {
+            //opacity: 0;
+            transition: opacity 1s ease;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+        }
+    }
     &:hover .header_button {
         opacity: 0.8;
     }
