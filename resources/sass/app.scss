@@ -57,4 +57,9 @@ a {
     color: #FCF7B3;
     border-color: #FCF7B3;
 }
+.list_img {
+    position: absolute;
+    filter: blur(1);
+    z-index: 0;
+}
 
