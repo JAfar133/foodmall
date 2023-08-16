@@ -12,8 +12,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("img/menu_bg.jpg") no-repeat center;
+    background: url("img/menu_bg.jpg") no-repeat fixed center center;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 
     .header_button {
         opacity: 0;
