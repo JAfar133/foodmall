@@ -5,13 +5,11 @@
     padding: 0;
     background-size: cover;
     .video-header{
-        position: fixed;
+        position: absolute;
         right: 0;
         top: 0;
         min-width: 100%;
         min-height: 100%;
-        -webkit-background-size: 2650px 1440px;
-        background-position-x: 50%;
         width: auto;
         height: auto;
         opacity: 70%;

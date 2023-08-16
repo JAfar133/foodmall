@@ -18,9 +18,7 @@
 @include('blocks.header')
 @include('blocks.about')
 <section class="menu__section">
-    <div class="menu__background">
     <a href="/menu" class="text-center header_button btn btn-outline-warning">Посмотреть меню</a>
-    </div>
 </section>
 @include('blocks.carousel')
 @include('blocks.contacts')
