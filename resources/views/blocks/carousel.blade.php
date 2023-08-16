@@ -1,7 +1,6 @@
 <section class="video">
     <div id="video-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="600000">
         <div class="carousel__title">
-            <span class="gold text-center w-100">Видео</span>
             <h2 class="">Наша атмосфера</h2>
         </div>
         <div class="carousel-inner" role="listbox">

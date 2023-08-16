@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
     background: url("img/menu_bg.jpg") no-repeat center;
+    background-attachment: fixed;
     background-size: cover;
 
     .header_button {
@@ -33,5 +34,11 @@
 @media only screen and (min-width: 991px) {
     .menu_page {
         padding: 0 200px;
+    }
+
+}
+@media only screen and (max-width: 991px) {
+    .menu__section {
+        background-attachment: scroll;
     }
 }

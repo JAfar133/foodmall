@@ -8,7 +8,9 @@
         max-width: 1300px;
         display: flex;
         color: white;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 15px;
+        padding: 0 10px;
     }
 }
