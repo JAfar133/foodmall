@@ -17,7 +17,7 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-
+    z-index: -10;
     .header_button {
         opacity: 0;
         transition: opacity 1s ease;
