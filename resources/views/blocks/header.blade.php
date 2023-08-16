@@ -9,7 +9,7 @@
             <li><a href="/menu">Меню</a></li>
         </ul>
     </nav>
-    <video class="video-header" autoplay muted loop>
+    <video class="video-header" autoplay loop muted playsinline>
         <source src="{{ asset('storage/video/foodmall_video.mp4') }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>

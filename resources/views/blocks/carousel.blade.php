@@ -7,7 +7,7 @@
         <div class="carousel-inner" role="listbox">
             @foreach ($videos as $key => $video)
                 <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
-                    <video class="video-fluid" controls autoplay muted loop>
+                    <video class="video-fluid" controls autoplay loop muted playsinline>
                         <source src="{{ asset('storage/'.$video->path) }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
