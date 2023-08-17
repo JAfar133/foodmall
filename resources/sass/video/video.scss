@@ -22,7 +22,7 @@
     max-height: 500px;
     vertical-align: center;
     width: 10% !important;
-    top: 50% !important;
+    top: calc(50% + 120px) !important;
     transform: translateY(-50%) !important;
     z-index: 99999 !important;
 }
