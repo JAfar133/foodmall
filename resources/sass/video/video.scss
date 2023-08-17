@@ -22,7 +22,7 @@
     max-height: 500px;
     vertical-align: center;
     width: 10% !important;
-    top: calc(50% + 120px) !important;
+    top: 50% !important;
     transform: translateY(-50%) !important;
     z-index: 99999 !important;
 }
@@ -34,6 +34,7 @@
     height: 100vh;
     background: #06101A;
     width: 100vw;
+
 }
 .carousel {
     overflow: hidden;

@@ -1,16 +1,16 @@
 {
   "resources/js/app.css": {
-    "file": "assets/app-c65fc99b.css",
+    "file": "assets/app-e2d8b206.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
     "css": [
-      "assets/app-c65fc99b.css"
+      "assets/app-e2d8b206.css"
     ],
     "dynamicImports": [
       "resources/js/carousel.js"
     ],
-    "file": "assets/app-87fdea5e.js",
+    "file": "assets/app-3047dbd8.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
