@@ -9,7 +9,7 @@
             <li><a href="/menu">Меню</a></li>
         </ul>
     </nav>
-    <video class="video-header" autoplay loop muted playsinline>
+    <video class="video-header" id="video-header" autoplay loop muted playsinline>
         <source src="{{ asset('storage/video/foodmall_video.mp4') }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -18,4 +18,27 @@
         <h3 class="h3-marquee"><span>ВОСТОК · КАВКАЗ · ЕВРОПА · ПАНАЗИЯ · ИТАЛИЯ · ЯПОНИЯ</span></h3>
     </div>
 </header>
+<script>
+    const video = document.getElementById('video-header');
+    let isScrolling = false;
 
+    function pauseVideo() {
+        video.pause();
+    }
+
+    function playVideo() {
+        video.play();
+    }
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > window.innerHeight) {
+            if (!video.paused) {
+                pauseVideo();
+            }
+        } else {
+            if (video.paused) {
+                playVideo();
+            }
+        }
+    });
+</script>
