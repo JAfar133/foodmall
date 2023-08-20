@@ -25,7 +25,6 @@
         justify-content: center;
         height: 150px;
         align-items: center;
-        flex-wrap: wrap;
         h1{
             font-family: 'Futura Futuris Bold';
             width: 100vw;
@@ -60,6 +59,7 @@
 
         }
         .header-links {
+            flex-wrap: wrap;
             padding-bottom: 10px;
             a {
                 text-decoration: none;
