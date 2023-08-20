@@ -34,7 +34,7 @@
 <div class="menu_page" data-targetsize="0.45" data-duration="600">
     @foreach($menus as $menu)
         <div class="f-panzoom">
-            <img class="f-panzoom__content" src="{{ asset('storage/'.$menu->path) }}" alt="">
+            <img class="f-panzoom__content" src="{{ asset('storage/'.$menu->path) }}" alt="Фудмолл ТЦ Люблино, Совхозная, 39 - меню">
         </div>
     @endforeach
 </div>
