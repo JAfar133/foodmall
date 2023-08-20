@@ -34,7 +34,7 @@
 }
 body {
     font-family: 'Futura Futuris Light';
-    background: #000;
+    background: $bg_color;
     box-sizing: border-box;
 }
 ul {
@@ -45,7 +45,7 @@ a {
     text-decoration: none;
 }
 .gold {
-    color: #FFC107;
+    color: $gold;
     font-weight: bold;
     font-size: 18px;
 }
