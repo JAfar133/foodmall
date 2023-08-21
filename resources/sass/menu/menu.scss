@@ -1,5 +1,5 @@
 .menu_page {
-    background: #06101A;
+    background: $bg_color;
     width: 100vw;
 
     img {
@@ -8,17 +8,15 @@
 }
 
 .menu__section {
-    background: #06101A;
+    background: url("img/menu_bg.jpg") no-repeat fixed center;
+    background-size: cover;
     height: 100vh;
     width: 100%;
     display: flex;
+    position: relative;
     top: 0;
     justify-content: center;
     align-items: center;
-    background: url("img/menu_bg.jpg") no-repeat center;
-    background-attachment: fixed;
-    background-size: cover;
-
     .header_button {
         opacity: 0;
         transition: opacity 0.3s ease;
@@ -29,7 +27,26 @@
     &:hover .header_button {
         opacity: 0.8;
     }
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 7%;
+        background: linear-gradient(to bottom, rgba(5, 33, 60, 1), transparent);
+    }
+
+    &::before {
+        top: -1px;
+    }
+
+    &::after {
+        bottom: -1px;
+        transform: scaleY(-1); // Переворачиваем псевдоэлемент по вертикали
+    }
 }
+
+
 
 @media only screen and (min-width: 991px) {
     .menu_page {
